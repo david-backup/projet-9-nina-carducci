@@ -167,10 +167,8 @@
           var t = a(this).data("images-toggle");
           a(".gallery-item").each(function () {
             a(this).parents(".item-column").hide(),
-              "all" === t
-                ? a(this).parents(".item-column").show(300)
-                : a(this).data("gallery-tag") === t &&
-                  a(this).parents(".item-column").show(300);
+              ("all" === t || a(this).data("gallery-tag") === t) &&
+                a(this).parents(".item-column").show(300);
           });
         }
       },
