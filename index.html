@@ -11,7 +11,7 @@
       content="Photographe professionnel en Île-de-France spécialisé dans les mariages, portraits et événements. Créez des souvenirs uniques avec mon expertise. Découvrez mon portfolio et réservez dès aujourd'hui."
     />
 
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" defer />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -62,7 +62,7 @@
               target="_blank"
             >
               <img
-                src="assets/images/instagram.png"
+                src="assets/images/instagram.webp"
                 width="20"
                 height="20"
                 alt="logo instagram"
@@ -103,43 +103,55 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <picture size="100vw">
-                <source
-                  srcset="./assets/images/slider/ryoji-iwata-768.webp"
-                  media="(max-width: 768px)"
-                />
-                <img
-                  src="./assets/images/slider/ryoji-iwata-2400.webp"
-                  class="d-block w-100"
-                  alt="homme sur un passage pieton"
-                />
-              </picture>
+              <img
+                src="./assets/images/slider/ryoji-iwata-1920.webp"
+                srcset="
+                  ./assets/images/slider/ryoji-iwata-450.webp   425w,
+                  ./assets/images/slider/ryoji-iwata-1920.webp 1440w,
+                  ./assets/images/slider/ryoji-iwata-1920.webp 2560w
+                "
+                class="d-block w-100"
+                alt="homme sur un passage pieton"
+                loading="eager"
+                width="1920"
+                height="888"
+                style="max-width: 100%; height: auto; object-fit: cover"
+                sizes="100vw"
+              />
             </div>
             <div class="carousel-item">
-              <picture size="100vw">
-                <source
-                  srcset="./assets/images/slider/nicholas-green-768.webp"
-                  media="(max-width: 768px)"
-                />
-                <img
-                  src="./assets/images/slider/nicholas-green-2400.webp"
-                  class="d-block w-100"
-                  alt="spéctateurs d'un concert"
-                />
-              </picture>
+              <img
+                src="./assets/images/slider/nicholas-green-1920.webp"
+                srcset="
+                  ./assets/images/slider/nicholas-green-450.webp   425w,
+                  ./assets/images/slider/nicholas-green-1920.webp 1440w,
+                  ./assets/images/slider/nicholas-green-1920.webp 2560w
+                "
+                class="d-block w-100"
+                alt="spéctateurs d'un concert"
+                loading="lazy"
+                width="1920"
+                height="888"
+                style="max-width: 100%; height: auto; object-fit: cover"
+                sizes="100vw"
+              />
             </div>
             <div class="carousel-item">
-              <picture size="100vw">
-                <source
-                  srcset="./assets/images/slider/edward-cisneros-768.webp"
-                  media="(max-width: 768px)"
-                />
-                <img
-                  src="./assets/images/slider/edward-cisneros-2400.webp"
-                  class="d-block w-100"
-                  alt="dance pendant un mariage"
-                />
-              </picture>
+              <img
+                src="./assets/images/slider/edward-cisneros-1920.webp"
+                srcset="
+                  ./assets/images/slider/edward-cisneros-450.webp   425w,
+                  ./assets/images/slider/edward-cisneros-1920.webp 1440w,
+                  ./assets/images/slider/edward-cisneros-1920.webp 2560w
+                "
+                class="d-block w-100"
+                alt="dance pendant un mariage"
+                loading="lazy"
+                width="1920"
+                height="888"
+                style="max-width: 100%; height: auto; object-fit: cover"
+                sizes="100vw"
+              />
             </div>
           </div>
           <button
@@ -167,7 +179,10 @@
           <img
             src="./assets/images/nina.webp"
             alt="image de nina carducci"
-            loading="lazy"
+            loading="eager"
+            width="560"
+            height="559"
+            style="max-width: 100%; height: auto"
           />
         </div>
         <section id="about-me">
@@ -201,6 +216,9 @@
               loading="lazy"
               src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"
               alt="image d'une salle de concert"
+              width="440"
+              height="440"
+              style="width: 100%; height: 100%"
             />
             <img
               data-gallery-tag="Entreprises"
@@ -208,6 +226,9 @@
               loading="lazy"
               src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"
               alt="image de ali morshedlou"
+              width="440"
+              height="440"
+              style="width: 100%; height: 100%"
             />
             <img
               data-gallery-tag="Entreprises"
@@ -215,6 +236,9 @@
               loading="lazy"
               src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp"
               alt="image d'une femme heureuse"
+              width="440"
+              height="440"
+              style="width: 100%; height: 100%"
             />
             <img
               data-gallery-tag="Mariages"
@@ -222,6 +246,9 @@
               loading="lazy"
               src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp"
               alt="photo de mains"
+              width="440"
+              height="440"
+              style="width: 100%; height: 100%"
             />
             <img
               data-gallery-tag="Portrait"
@@ -229,6 +256,9 @@
               loading="lazy"
               src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp"
               alt="photo d'un homme qui ferme les yeux"
+              width="440"
+              height="440"
+              style="width: 100%; height: 100%"
             />
             <img
               data-gallery-tag="Mariages"
@@ -236,6 +266,9 @@
               loading="lazy"
               src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp"
               alt="un homme et une femme marié"
+              width="440"
+              height="440"
+              style="width: 100%; height: 100%"
             />
             <img
               data-gallery-tag="Portrait"
@@ -243,6 +276,9 @@
               loading="lazy"
               src="./assets/images/gallery/portraits/nino-van-prattenburg-443cl1uR_8-unsplash.webp"
               alt="photo d'une femme"
+              width="440"
+              height="440"
+              style="width: 100%; height: 100%"
             />
             <img
               data-gallery-tag="Concert"
@@ -250,6 +286,9 @@
               loading="lazy"
               src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp"
               alt="photo d'un chanteur sur scéne"
+              width="440"
+              height="440"
+              style="width: 100%; height: 100%"
             />
             <img
               data-gallery-tag="Entreprises"
@@ -257,6 +296,9 @@
               loading="lazy"
               src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp"
               alt="photo d'une femme avec son ordinateur"
+              width="440"
+              height="440"
+              style="width: 100%; height: 100%"
             />
           </div>
         </div>
@@ -370,6 +412,9 @@
               src="./assets/images/camera.webp"
               loading="lazy"
               alt="photo d'appareil photo"
+              width="392"
+              height="391"
+              style="width: 100%; height: auto"
             />
           </div>
         </div>
